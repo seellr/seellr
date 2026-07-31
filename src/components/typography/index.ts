@@ -1,0 +1,6 @@
+export { Heading } from './Heading'
+export { Text } from './Text'
+export { Caption } from './Caption'
+export { Label } from './Label'
+export { GradientText } from './GradientText'
+export { SectionTitle } from './SectionTitle'
