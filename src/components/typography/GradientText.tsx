@@ -15,7 +15,7 @@ const gradientTextVariants = cva(
          * Signature green gradient — primary brand accent.
          * Use in the hero headline or final CTA.
          */
-        green: 'from-brand-accent to-[#45D394]',
+        green: 'from-brand-accent to-[#b3e626]',
 
         /**
          * Blue-green gradient — secondary accent.

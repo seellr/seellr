@@ -12,6 +12,7 @@ export function WhySeellrSection() {
     <Section
       background="surface"
       spacing="lg"
+      className="overflow-hidden"
       aria-labelledby="why-seellr-heading"
     >
       <BackgroundGlow variant="green" size="lg" position="bottom-center" />

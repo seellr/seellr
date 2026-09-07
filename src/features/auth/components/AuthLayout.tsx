@@ -79,7 +79,7 @@ function MiniDashboard() {
                   className="flex-1 rounded-t-[1px]"
                   style={{
                     height:          `${h}%`,
-                    backgroundColor: i >= BAR_HEIGHTS.length - 2 ? '#57DFA6' : 'rgba(255,255,255,0.1)',
+                    backgroundColor: i >= BAR_HEIGHTS.length - 2 ? '#c8ff2c' : 'rgba(255,255,255,0.1)',
                     opacity:         i === BAR_HEIGHTS.length - 2 ? 0.5 : 1,
                   }}
                 />
@@ -170,7 +170,7 @@ export function AuthLayout({
           aria-hidden="true"
           className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full"
           style={{
-            background: 'radial-gradient(circle, rgba(87,223,166,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(200,255,44,0.12) 0%, transparent 70%)',
           }}
         />
 

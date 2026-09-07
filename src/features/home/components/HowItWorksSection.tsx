@@ -9,7 +9,7 @@ const HowItWorksSteps = dynamic(() =>
 
 export function HowItWorksSection() {
   return (
-    <Section background="white" aria-labelledby="how-it-works-heading">
+    <Section background="white" className="overflow-hidden" aria-labelledby="how-it-works-heading">
       {/* Heading constrained */}
       <Container>
         <div className="mx-auto mb-10 max-w-xl text-center lg:mb-14">

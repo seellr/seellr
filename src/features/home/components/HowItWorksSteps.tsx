@@ -9,8 +9,8 @@ const STEPS = [
     icon:    UserPlus,
     title:   'Sign up for free',
     description: 'Create your account in 30 seconds. No credit card required — ever.',
-    bg:      '#0A0A0A',
-    accent:  '#57DFA6',
+    bg:      '#071a3d',
+    accent:  '#c8ff2c',
     tag:     'Start here',
     cta:     { label: 'Create account', href: '/signup' },
     visual: (
@@ -20,7 +20,7 @@ const STEPS = [
           <div className="h-8 flex-1 rounded-lg bg-white/10" />
           <div className="h-8 flex-1 rounded-lg bg-white/10" />
         </div>
-        <div className="h-9 rounded-lg" style={{ background: '#57DFA6' }} />
+        <div className="h-9 rounded-lg" style={{ background: '#c8ff2c' }} />
       </div>
     ),
   },

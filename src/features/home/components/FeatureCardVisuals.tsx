@@ -208,7 +208,7 @@ export function AnalyticsCardVisual() {
               className="w-full rounded-t-sm"
               style={{
                 height: `${h}%`,
-                background: i === 3 ? '#57DFA6' : 'rgba(87,223,166,0.35)',
+                background: i === 3 ? '#c8ff2c' : 'rgba(200,255,44,0.35)',
               }}
             />
           </div>

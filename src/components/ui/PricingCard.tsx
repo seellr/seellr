@@ -25,7 +25,7 @@ export function PricingCard({
       className={cn(
         'relative flex flex-col rounded-2xl border p-8 transition-all duration-300',
         featured
-          ? 'border-brand-accent/30 bg-foreground text-background shadow-[0_0_0_1px_rgba(87,223,166,0.22),0_24px_56px_rgba(0,0,0,0.18),0_0_60px_rgba(87,223,166,0.07)]'
+          ? 'border-brand-accent/30 bg-foreground text-background shadow-[0_0_0_1px_rgba(200,255,44,0.22),0_24px_56px_rgba(0,0,0,0.18),0_0_60px_rgba(200,255,44,0.07)]'
           : 'border-border bg-background shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-card-hover)]',
         className,
       )}

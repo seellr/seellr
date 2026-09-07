@@ -36,7 +36,7 @@ const SPACING_FIELDS = [
   { label: 'R', value: '24' },
 ] as const
 
-const BRAND_SWATCHES = ['#57DFA6', '#0A0A0A', '#B0D7FF', '#EAB308', '#DC2626'] as const
+const BRAND_SWATCHES = ['#c8ff2c', '#071a3d', '#145bff', '#EAB308', '#DC2626'] as const
 
 function BuilderSidebar() {
   return (
@@ -79,7 +79,7 @@ function CanvasWebsite() {
       {/* Hero block — selected */}
       <div className="relative flex flex-col items-center justify-center gap-2 bg-gradient-to-b from-[#F0FDF8] to-white px-4 py-5">
         {/* Selection ring */}
-        <div className="pointer-events-none absolute inset-0 rounded" style={{ boxShadow: '0 0 0 2px #57DFA6' }} />
+        <div className="pointer-events-none absolute inset-0 rounded" style={{ boxShadow: '0 0 0 2px #c8ff2c' }} />
         {/* Corner handles */}
         {(['top-left', 'top-right', 'bottom-left', 'bottom-right'] as const).map((pos) => (
           <div

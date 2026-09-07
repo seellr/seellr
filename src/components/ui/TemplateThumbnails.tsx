@@ -3,7 +3,7 @@ import React from 'react'
 // Mini website layout previews for each template category.
 // These are decorative, Server-compatible, pure HTML/CSS components.
 
-function MiniNav({ logoColor = '#57DFA6', ctaLabel }: { logoColor?: string; ctaLabel?: string }) {
+function MiniNav({ logoColor = '#c8ff2c', ctaLabel }: { logoColor?: string; ctaLabel?: string }) {
   return (
     <div className="flex h-7 items-center gap-2 border-b border-black/5 bg-white px-3">
       <div className="h-3.5 w-3.5 rounded-sm" style={{ background: logoColor }} />
@@ -23,7 +23,7 @@ function MiniNav({ logoColor = '#57DFA6', ctaLabel }: { logoColor?: string; ctaL
 export function BusinessThumbnail() {
   return (
     <div className="h-full w-full overflow-hidden bg-white" aria-hidden="true">
-      <MiniNav logoColor="#0A0A0A" ctaLabel="Contact" />
+      <MiniNav logoColor="#071a3d" ctaLabel="Contact" />
       {/* Hero */}
       <div className="relative bg-neutral-950 px-4 py-5">
         <div className="mb-1.5 h-3.5 w-32 rounded-full bg-white/80" />

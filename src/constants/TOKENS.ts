@@ -10,7 +10,7 @@ export const CSS_VAR = {
   accent:             'var(--color-brand-accent)',
   accentHover:        'var(--color-brand-accent-hover)',
   blue:               'var(--color-brand-blue)',
-  blueHighlight:      'var(--color-brand-blue-highlight)',
+  blueHover:          'var(--color-brand-blue-hover)',
   surface:            'var(--color-brand-surface)',
   surfaceSecondary:   'var(--color-brand-surface-secondary)',
   textPrimary:        'var(--color-brand-text-primary)',

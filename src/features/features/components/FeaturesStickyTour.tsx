@@ -33,7 +33,7 @@ const STEPS: TourStep[] = [
     heading:     'Launch a stunning website in minutes',
     description: 'Drag-and-drop builder with 120+ premium templates. Every site is responsive, SEO-optimised, and blazing fast — no code required.',
     benefits:    ['120+ professionally designed templates', 'Visual drag-and-drop editor', 'Built-in SEO toolkit', 'Mobile-first responsive', 'Custom domain & SSL free', 'One-click publishing'],
-    accentColor: '#57DFA6',
+    accentColor: '#c8ff2c',
     Icon:        Globe,
     href:        '/signup',
     cta:         'Start building free',
@@ -45,7 +45,7 @@ const STEPS: TourStep[] = [
     heading:     'Sell anything, anywhere in the world',
     description: 'Built-in ecommerce with inventory, multi-currency payments, and shipping — all from one place. Zero transaction fees on Business.',
     benefits:    ['Unlimited products & variants', 'Accept 40+ payment methods', 'Multi-currency checkout', 'Inventory management', 'Discount codes & bundles', 'Abandoned cart recovery'],
-    accentColor: '#B0D7FF',
+    accentColor: '#145bff',
     Icon:        ShoppingBag,
     href:        '/signup',
     cta:         'Open your store',
@@ -297,8 +297,8 @@ function AnalyticsPanel() {
                   style={{
                     height:          `${h}%`,
                     backgroundColor: i >= BAR_DATA.length - 2
-                      ? '#57DFA6'
-                      : 'rgba(10,10,10,0.07)',
+                      ? '#c8ff2c'
+                      : 'rgba(7,26,61,0.07)',
                     opacity: i === BAR_DATA.length - 2 ? 0.5 : 1,
                   }}
                 />

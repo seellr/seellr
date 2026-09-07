@@ -27,7 +27,7 @@ const STEPS: Step[] = [
     title:       'Launch a stunning website in minutes',
     description: 'Drag-and-drop builder with 120+ premium templates. Fully responsive, SEO-optimised, and blazing fast out of the box. No code required.',
     Icon:        Globe,
-    accentColor: '#57DFA6',
+    accentColor: '#c8ff2c',
     metrics:     [
       { label: 'Templates',      value: '120+' },
       { label: 'Avg. build time', value: '4 min'  },
@@ -40,7 +40,7 @@ const STEPS: Step[] = [
     title:       'Sell anything, anywhere',
     description: 'Built-in ecommerce with inventory, payments, shipping, and discount codes. Accepts all major cards and local payment methods worldwide.',
     Icon:        ShoppingBag,
-    accentColor: '#B0D7FF',
+    accentColor: '#145bff',
     metrics:     [
       { label: 'Payment methods', value: '40+'    },
       { label: 'Avg. setup time', value: '8 min'  },
@@ -168,7 +168,7 @@ function DashboardPanel({ step }: { step: Step }) {
                 )}
                 style={{
                   height:           `${h}%`,
-                  backgroundColor:  i >= BAR_HEIGHTS.length - 2 ? accentColor : '#0A0A0A',
+                  backgroundColor:  i >= BAR_HEIGHTS.length - 2 ? accentColor : '#071a3d',
                 }}
               />
             ))}
