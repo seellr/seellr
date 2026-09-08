@@ -1,9 +1,22 @@
 import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
+import { IBM_Plex_Sans_Arabic, IBM_Plex_Mono } from 'next/font/google'
 import { Providers }   from '@/providers'
 import { SITE_CONFIG } from '@/config/site'
 import '@/styles/globals.css'
+
+const ibmPlexArabic = IBM_Plex_Sans_Arabic({
+  subsets: ['latin', 'arabic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-ibm-plex-arabic',
+  display: 'swap',
+})
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-ibm-plex-mono',
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
@@ -41,7 +54,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html
       lang="en"
       dir="ltr"
-      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      className={`${ibmPlexArabic.variable} ${ibmPlexMono.variable}`}
       suppressHydrationWarning
     >
       <body className="min-h-screen antialiased">

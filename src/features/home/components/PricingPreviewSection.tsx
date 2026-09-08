@@ -12,7 +12,7 @@ const PricingCards = dynamic(() => import('./PricingCards').then(m => ({ default
 
 export function PricingPreviewSection() {
   return (
-    <Section spacing="lg" aria-labelledby="pricing-preview-heading">
+    <Section spacing="lg" className="overflow-hidden" aria-labelledby="pricing-preview-heading">
       <BackgroundGlow variant="green" size="lg" position="top-center" />
 
       <Container>

@@ -7,8 +7,8 @@ import { cn } from '@/lib/utils'
  */
 
 const variantStyles = {
-  green: 'bg-[radial-gradient(ellipse_at_center,rgba(87,223,166,0.15)_0%,transparent_70%)]',
-  blue:  'bg-[radial-gradient(ellipse_at_center,rgba(176,215,255,0.18)_0%,transparent_70%)]',
+  green: 'bg-[radial-gradient(ellipse_at_center,rgba(200,255,44,0.15)_0%,transparent_70%)]',
+  blue:  'bg-[radial-gradient(ellipse_at_center,rgba(20,91,255,0.18)_0%,transparent_70%)]',
   subtle:'bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.03)_0%,transparent_70%)]',
 } as const
 

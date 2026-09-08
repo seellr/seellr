@@ -79,7 +79,7 @@ function MiniDashboard() {
                   className="flex-1 rounded-t-[1px]"
                   style={{
                     height:          `${h}%`,
-                    backgroundColor: i >= BAR_HEIGHTS.length - 2 ? '#57DFA6' : 'rgba(255,255,255,0.1)',
+                    backgroundColor: i >= BAR_HEIGHTS.length - 2 ? '#c8ff2c' : 'rgba(255,255,255,0.1)',
                     opacity:         i === BAR_HEIGHTS.length - 2 ? 0.5 : 1,
                   }}
                 />
@@ -122,9 +122,14 @@ export function AuthLayout({
             className="flex items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent"
             aria-label="Seellr – Go to homepage"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-[5px] bg-foreground">
-              <span className="text-[11px] font-bold text-background">S</span>
-            </span>
+            <img
+              src="/logo-mark.svg"
+              alt=""
+              aria-hidden="true"
+              className="h-8 w-8"
+              width={32}
+              height={32}
+            />
             <span className="text-sm font-semibold text-foreground">Seellr</span>
           </Link>
         </div>
@@ -170,7 +175,7 @@ export function AuthLayout({
           aria-hidden="true"
           className="pointer-events-none absolute left-1/2 top-1/2 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full"
           style={{
-            background: 'radial-gradient(circle, rgba(87,223,166,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(circle, rgba(200,255,44,0.12) 0%, transparent 70%)',
           }}
         />
 

@@ -106,7 +106,7 @@ export function FeaturesHero() {
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-0 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 opacity-40"
-        style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(87,223,166,0.18), transparent)' }}
+        style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,255,44,0.18), transparent)' }}
       />
 
       <Container>
@@ -171,7 +171,7 @@ export function FeaturesHero() {
           <div
             aria-hidden="true"
             className="pointer-events-none absolute -inset-8 -z-10 opacity-30"
-            style={{ background: 'radial-gradient(ellipse 80% 50% at 50% 100%, rgba(87,223,166,0.2), transparent)' }}
+            style={{ background: 'radial-gradient(ellipse 80% 50% at 50% 100%, rgba(200,255,44,0.2), transparent)' }}
           />
           <ProductPreview />
           {/* Fade mask */}

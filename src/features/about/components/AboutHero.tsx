@@ -12,7 +12,7 @@ export function AboutHero() {
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-0 h-[400px] w-[700px] -translate-x-1/2 -translate-y-1/2 opacity-30"
-        style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(87,223,166,0.2), transparent)' }}
+        style={{ background: 'radial-gradient(ellipse 60% 50% at 50% 0%, rgba(200,255,44,0.2), transparent)' }}
       />
 
       <Container>

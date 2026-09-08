@@ -112,12 +112,12 @@ export function AnalyticsVisual() {
               >
                 <path
                   d="M0 90 C30 85, 60 78, 90 70 C120 62, 145 68, 170 58 C195 48, 220 38, 250 30 C280 22, 310 18, 340 10 C360 5, 380 4, 400 2 L400 100 L0 100 Z"
-                  fill="rgba(87,223,166,0.12)"
+                  fill="rgba(200,255,44,0.12)"
                 />
                 <path
                   d="M0 90 C30 85, 60 78, 90 70 C120 62, 145 68, 170 58 C195 48, 220 38, 250 30 C280 22, 310 18, 340 10 C360 5, 380 4, 400 2"
                   fill="none"
-                  stroke="#57DFA6"
+                  stroke="#c8ff2c"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

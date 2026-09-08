@@ -16,7 +16,7 @@ export function FinalCtaSection() {
         className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[700px] -translate-x-1/2 -translate-y-1/2 opacity-20"
         style={{
           background:
-            'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(87,223,166,0.5), transparent)',
+            'radial-gradient(ellipse 70% 60% at 50% 50%, rgba(200,255,44,0.5), transparent)',
         }}
       />
 
@@ -53,7 +53,7 @@ export function FinalCtaSection() {
           <div className="mt-2 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/signup"
-              className="group flex items-center gap-2 rounded-md bg-brand-accent px-6 py-3 text-sm font-semibold text-foreground transition-all hover:-translate-y-px hover:bg-brand-accent-hover hover:shadow-[0_8px_30px_rgba(87,223,166,0.35)]"
+              className="group flex items-center gap-2 rounded-md bg-brand-accent px-6 py-3 text-sm font-semibold text-foreground transition-all hover:-translate-y-px hover:bg-brand-accent-hover hover:shadow-[0_8px_30px_rgba(200,255,44,0.35)]"
             >
               Start free — no credit card
               <ArrowRight

@@ -9,7 +9,7 @@ const WebsiteBuilderVisual  = dynamic(() => import('./WebsiteBuilderVisual').the
 
 export function WebsiteBuilderSection() {
   return (
-    <Section spacing="lg" background="white" aria-label="Website Builder feature">
+    <Section spacing="lg" background="white" className="overflow-hidden" aria-label="Website Builder feature">
       {/* Decorative glow — right side */}
       <BackgroundGlow variant="green" size="md" position="center-right" />
 

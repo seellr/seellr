@@ -11,7 +11,7 @@ export function HeroSection() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="lg:flex lg:flex-col mt-20 lg:border-t lg:border-border"
+      className="lg:flex lg:flex-col mt-20 bg-foreground text-background lg:border-t lg:border-white/10"
     >
       <Container className='min-h-[70dvh]' size="wide">
         <div className="flex flex-1 flex-col lg:grid lg:grid-cols-12 min-h-[70dvh]">

@@ -41,7 +41,7 @@ export function PricingHero() {
               <div key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
                   <circle cx="7" cy="7" r="6.5" stroke="currentColor" strokeOpacity=".3" />
-                  <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#57DFA6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#c8ff2c" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
                 {item}
               </div>

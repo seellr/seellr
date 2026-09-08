@@ -3,6 +3,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { Globe, Check, ChevronDown } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { useLocale } from '@/providers/LocaleProvider'
 
 export interface Locale {
   code: string
@@ -17,16 +18,13 @@ const LOCALES: Locale[] = [
 ]
 
 interface LanguageSwitcherProps {
-  currentLocale?: string
-  onLocaleChange?: (locale: Locale) => void
   className?: string
 }
 
 export function LanguageSwitcher({
-  currentLocale = 'en',
-  onLocaleChange,
   className,
 }: LanguageSwitcherProps) {
+  const { locale: currentLocale, setLocale } = useLocale()
   const [open, setOpen]   = useState(false)
   const triggerRef        = useRef<HTMLButtonElement>(null)
   const menuRef           = useRef<HTMLUListElement>(null)
@@ -93,7 +91,7 @@ export function LanguageSwitcher({
   }
 
   function handleSelect(locale: Locale) {
-    onLocaleChange?.(locale)
+    setLocale(locale.code)
     setOpen(false)
     triggerRef.current?.focus()
   }

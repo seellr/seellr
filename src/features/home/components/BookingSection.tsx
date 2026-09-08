@@ -9,7 +9,7 @@ const BookingContent = dynamic(() => import('./BookingContent').then(m => ({ def
 
 export function BookingSection() {
   return (
-    <Section background="surface" aria-label="Booking System">
+    <Section background="surface" className="overflow-hidden" aria-label="Booking System">
       <BackgroundGlow variant="blue" size="lg" position="center-left" />
 
       <Container>

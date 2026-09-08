@@ -22,7 +22,7 @@ function DashboardSidebar() {
     <aside className="flex h-full w-[110px] shrink-0 flex-col gap-1 border-r border-white/5 bg-white/5 p-3 md:w-[140px]">
       {/* Logo */}
       <div className="mb-3 flex items-center gap-2 px-1 py-1">
-        <div className="h-5 w-5 rounded bg-[#57DFA6]" aria-hidden="true" />
+        <div className="h-5 w-5 rounded bg-[#c8ff2c]" aria-hidden="true" />
         <span className="text-[11px] font-semibold text-white/90">Seellr</span>
       </div>
 
@@ -61,12 +61,12 @@ function RevenueChart() {
       <svg viewBox="0 0 480 130" className="w-full" aria-hidden="true">
         <defs>
           <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#57DFA6" stopOpacity="0.25" />
-            <stop offset="100%" stopColor="#57DFA6" stopOpacity="0.02" />
+            <stop offset="0%" stopColor="#c8ff2c" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="#c8ff2c" stopOpacity="0.02" />
           </linearGradient>
         </defs>
         <path d={path} fill="url(#chartFill)" />
-        <path d={line} fill="none" stroke="#57DFA6" strokeWidth="2" strokeLinecap="round" />
+        <path d={line} fill="none" stroke="#c8ff2c" strokeWidth="2" strokeLinecap="round" />
         {/* Y-axis labels */}
         {['$15k', '$10k', '$5k'].map((label, i) => (
           <text key={label} x="0" y={20 + i * 45} className="text-[8px]" fill="#9CA3AF" fontSize="8">
@@ -105,7 +105,7 @@ function DashboardMainArea() {
         <span className="text-[10px] font-semibold text-gray-900">Dashboard</span>
         <div className="flex items-center gap-2" aria-hidden="true">
           <Bell size={12} className="text-gray-400" />
-          <div className="h-5 w-5 rounded-full bg-[#57DFA6]/30" />
+          <div className="h-5 w-5 rounded-full bg-[#c8ff2c]/30" />
         </div>
       </div>
 
@@ -147,7 +147,7 @@ function DashboardMainArea() {
                   </div>
                   <div className="h-1 overflow-hidden rounded-full bg-gray-100">
                     <div
-                      className="h-full rounded-full bg-[#57DFA6]"
+                      className="h-full rounded-full bg-[#c8ff2c]"
                       style={{ width: `${pct}%` }}
                       aria-hidden="true"
                     />
@@ -191,7 +191,7 @@ function FloatingRevenueCard() {
       <div className="rounded-xl border border-white/10 bg-white/10 p-3 backdrop-blur-md">
         <p className="text-[10px] text-white/50">Monthly Revenue</p>
         <p className="text-lg font-bold text-white">$12,400</p>
-        <p className="mt-0.5 flex items-center gap-1 text-[10px] text-[#57DFA6]">
+        <p className="mt-0.5 flex items-center gap-1 text-[10px] text-[#c8ff2c]">
           <TrendingUp size={9} /> Up 18% from last month
         </p>
       </div>

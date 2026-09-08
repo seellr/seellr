@@ -1,10 +1,10 @@
 export const SITE_CONFIG = {
   name: 'Seellr',
-  tagline: 'Build your entire online business in one place.',
+  tagline: 'Build. Sell. Grow.',
   description:
-    'Seellr is a premium SaaS website builder that allows businesses to create websites, ecommerce stores, bookings, CRM, analytics and everything required to run a modern online business.',
+    'Seellr is the all-in-one business platform empowering Arab digital creators and knowledge businesses to sell, manage customers, deliver digital products, and scale. Natively bilingual Arabic/English with full RTL/LTR support.',
   url: 'https://seellr.com',
-  ogImage: '/og-default.png',
+  ogImage: '/og-default.svg',
   twitter: '@seellr',
   locale: 'en',
   creator: 'Seellr',

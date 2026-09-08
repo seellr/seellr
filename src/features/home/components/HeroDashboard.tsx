@@ -177,7 +177,7 @@ export function HeroDashboard() {
           aria-hidden="true"
           className="pointer-events-none absolute -inset-6 -z-10 opacity-40"
           style={{
-            background: 'radial-gradient(ellipse 70% 50% at 50% 100%, rgba(87,223,166,0.25), transparent)',
+            background: 'radial-gradient(ellipse 70% 50% at 50% 100%, rgba(200,255,44,0.25), transparent)',
           }}
         />
 

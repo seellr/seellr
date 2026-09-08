@@ -96,9 +96,9 @@ function AppMain() {
                 style={{
                   height: `${h}%`,
                   background: i === BAR_HEIGHTS.length - 1
-                    ? '#57DFA6'
+                    ? '#c8ff2c'
                     : i >= BAR_HEIGHTS.length - 3
-                      ? 'rgba(87,223,166,0.35)'
+                      ? 'rgba(200,255,44,0.35)'
                       : 'rgba(0,0,0,0.06)',
                 }}
               />
