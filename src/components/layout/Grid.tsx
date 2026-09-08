@@ -20,8 +20,8 @@ const gridVariants = cva('grid', {
       bento: 'grid-cols-12',
     },
     gap: {
-      sm: 'gap-4',
-      md: 'gap-6',
+      sm: 'gap-[15px]',
+      md: 'gap-[30px]',
       lg: 'gap-8',
       xl: 'gap-12',
     },

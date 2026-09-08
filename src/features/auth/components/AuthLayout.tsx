@@ -122,9 +122,14 @@ export function AuthLayout({
             className="flex items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent"
             aria-label="Seellr – Go to homepage"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-[5px] bg-foreground">
-              <span className="text-[11px] font-bold text-background">S</span>
-            </span>
+            <img
+              src="/logo-mark.svg"
+              alt=""
+              aria-hidden="true"
+              className="h-8 w-8"
+              width={32}
+              height={32}
+            />
             <span className="text-sm font-semibold text-foreground">Seellr</span>
           </Link>
         </div>

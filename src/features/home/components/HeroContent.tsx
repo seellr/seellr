@@ -32,8 +32,8 @@ export function HeroContent() {
         <Link
           href="/changelog"
           className={cn(
-            'inline-flex items-center gap-2 text-sm text-muted-foreground',
-            'transition-colors duration-150 hover:text-foreground',
+            'inline-flex items-center gap-2 text-sm text-white/80',
+            'transition-colors duration-150 hover:text-white',
             'focus-visible:outline-none focus-visible:underline',
           )}
         >
@@ -47,22 +47,18 @@ export function HeroContent() {
         id="hero-heading"
         className={cn(
           'hero-item hero-delay-2',
-          'text-balance text-[2.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-foreground',
+          'text-balance text-[2.6rem] font-bold leading-[1.06] tracking-[-0.03em] text-white',
           'sm:text-5xl lg:text-[3.5rem] xl:text-[4rem]',
         )}
       >
-        Run your entire
-        <br />
-        business from
-        <br />
-        one platform
+        Build. Sell. Grow.
       </h1>
 
       {/* Description */}
       <p
         className={cn(
           'hero-item hero-delay-3',
-          'max-w-sm text-base leading-relaxed text-muted-foreground',
+          'max-w-sm text-base leading-relaxed text-white',
         )}
       >
         Seellr replaces your website builder, online store, booking system, CRM,
@@ -94,13 +90,13 @@ export function HeroContent() {
       <div
         className={cn(
           'hero-item hero-delay-5',
-          'flex items-center gap-3 text-sm text-muted-foreground',
+          'flex items-center gap-3 text-sm text-white',
         )}
       >
         <AvatarStack />
         <p>
           Trusted by{' '}
-          <strong className="font-semibold text-foreground">120,000+</strong>{' '}
+          <strong className="font-semibold text-white">120,000+</strong>{' '}
           businesses worldwide
         </p>
       </div>

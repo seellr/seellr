@@ -14,9 +14,9 @@
 
 @theme inline {
   /* ── Fonts ─────────────────────────────────────────── */
-  --font-sans: 'IBM Plex Arabic Text', 'IBM Plex Sans', system-ui, sans-serif;
-  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
-  --font-heading: 'Satoshi', 'IBM Plex Arabic Text', system-ui, sans-serif;
+  --font-sans:    var(--font-ibm-plex-arabic), system-ui, sans-serif;
+  --font-mono:    var(--font-ibm-plex-mono), ui-monospace, monospace;
+  --font-heading: 'Satoshi', var(--font-ibm-plex-arabic), system-ui, sans-serif;
 
   /* ── shadcn semantic bridge ─────────────────────────
      Maps shadcn CSS vars → Tailwind color utilities.
@@ -405,6 +405,50 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--brand-text-muted);
+}
+
+/* ─────────────────────────────────────────────────────────
+   DIAGONAL X PATTERN
+   Derived from Seellr logo geometry. Use as decorative overlay.
+   ───────────────────────────────────────────────────────── */
+.pattern-diagonal-x {
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 40px,
+      rgba(20, 91, 255, 0.03) 40px,
+      rgba(20, 91, 255, 0.03) 42px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(200, 255, 44, 0.02) 40px,
+      rgba(200, 255, 44, 0.02) 42px
+    );
+}
+
+.pattern-diagonal-x::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 40px,
+      rgba(20, 91, 255, 0.03) 40px,
+      rgba(20, 91, 255, 0.03) 42px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(200, 255, 44, 0.02) 40px,
+      rgba(200, 255, 44, 0.02) 42px
+    );
+  pointer-events: none;
 }
 
 /* ─────────────────────────────────────────────────────────

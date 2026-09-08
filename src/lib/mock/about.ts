@@ -24,45 +24,38 @@ export interface TeamMember {
 export const VALUES: Value[] = [
   {
     id: 'val-1',
-    icon: 'Zap',
-    title: 'Speed first',
+    icon: 'Eye',
+    title: 'Clarity',
     description:
-      'Every product decision starts with speed — of the builder, of the output, of the workflow. Slow is a bug.',
+      'We simplify complexity into intuitive experiences. Every feature is designed to be immediately understood — no manuals, no guesswork.',
   },
   {
     id: 'val-2',
     icon: 'Shield',
-    title: 'Honest defaults',
+    title: 'Trust',
     description:
-      'No dark patterns, no artificial feature gates, no surprise charges. What you see in the trial is what you get.',
+      'We build reliable tools that give creators confidence. Your data is safe, your payments are secure, your platform is always on.',
   },
   {
     id: 'val-3',
-    icon: 'Users',
-    title: 'Customer-led',
+    icon: 'Brain',
+    title: 'Intelligence',
     description:
-      'Every major feature in Seellr came directly from a customer conversation. We build what gets asked, not what looks good in a pitch deck.',
+      'Smart technology powers better business decisions. From analytics to automation, we give you the insights to grow with purpose.',
   },
   {
     id: 'val-4',
-    icon: 'Globe',
-    title: 'Built to last',
+    icon: 'TrendingUp',
+    title: 'Growth',
     description:
-      'We write software that works in five years. No hyped re-writes, no abandoned integrations, no sunset dates.',
+      'We design that turns knowledge into sustainable business. Every tool is built to help you scale — from first sale to global reach.',
   },
   {
     id: 'val-5',
-    icon: 'BarChart2',
-    title: 'Transparent growth',
+    icon: 'Globe',
+    title: 'Inclusivity',
     description:
-      'We share our numbers publicly — MRR, churn, uptime. Accountability makes us better.',
-  },
-  {
-    id: 'val-6',
-    icon: 'Calendar',
-    title: 'Long-term thinking',
-    description:
-      'We optimise for a 10-year relationship with each customer, not a quarterly sprint to conversion.',
+      'Truly bilingual — Arabic and English are equally native. Built ground-up for the Arab market with region-specific payment solutions.',
   },
 ]
 

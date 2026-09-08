@@ -36,12 +36,14 @@ function FooterLogo() {
       aria-label="Seellr – Go to homepage"
       className="inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent focus-visible:ring-offset-2"
     >
-      <span
+      <img
+        src="/logo-mark.svg"
+        alt=""
         aria-hidden="true"
-        className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-foreground"
-      >
-        <span className="select-none text-[11px] font-bold leading-none text-background">S</span>
-      </span>
+        className="h-8 w-8 shrink-0"
+        width={32}
+        height={32}
+      />
       <span aria-hidden="true" className="text-[15px] font-semibold tracking-tight text-foreground">
         Seellr
       </span>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 120" fill="none">
+  <!-- Primary Lockup: X mark + "Seellr" wordmark -->
+  <g>
+    <!-- X mark -->
+    <line x1="20" y1="20" x2="100" y2="100" stroke="#145bff" stroke-width="14" stroke-linecap="round"/>
+    <line x1="100" y1="20" x2="20" y2="100" stroke="#071a3d" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="60" cy="60" r="8" fill="#c8ff2c"/>
+    <!-- Wordmark -->
+    <text x="120" y="72" font-family="'Satoshi', system-ui, sans-serif" font-size="48" font-weight="700" fill="#071a3d" letter-spacing="-0.03em">Seellr</text>
+  </g>
+</svg>

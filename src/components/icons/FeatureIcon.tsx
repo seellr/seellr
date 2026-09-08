@@ -6,6 +6,9 @@ import {
   BarChart2,
   Zap,
   Shield,
+  Eye,
+  Brain,
+  TrendingUp,
   type LucideProps,
 } from 'lucide-react'
 import type { FC } from 'react'
@@ -18,6 +21,9 @@ const ICON_MAP: Record<string, FC<LucideProps>> = {
   BarChart2,
   Zap,
   Shield,
+  Eye,
+  Brain,
+  TrendingUp,
 }
 
 interface FeatureIconProps extends LucideProps {

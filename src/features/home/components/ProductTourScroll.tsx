@@ -98,7 +98,7 @@ function DashboardPanel({ step }: { step: Step }) {
   return (
     <div className="overflow-hidden rounded-xl border border-border bg-background shadow-[var(--shadow-float)]">
       {/* Window chrome */}
-      <div className="flex h-9 items-center gap-1.5 border-b border-border bg-brand-surface px-4">
+      <div className="flex h-8 sm:h-9 items-center gap-1.5 border-b border-border bg-brand-surface px-4">
         <span className="h-2.5 w-2.5 rounded-full bg-rose-400" />
         <span className="h-2.5 w-2.5 rounded-full bg-amber-400" />
         <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
@@ -108,15 +108,15 @@ function DashboardPanel({ step }: { step: Step }) {
       </div>
 
       {/* Main content */}
-      <div className="p-6">
+      <div className="p-4 sm:p-5 lg:p-6">
         {/* Header */}
-        <div className="mb-5 flex items-center gap-3">
+        <div className="mb-4 sm:mb-5 flex items-center gap-3">
           <div
-            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg"
+            className="flex h-8 w-8 sm:h-9 sm:w-9 shrink-0 items-center justify-center rounded-lg"
             style={{ background: `${accentColor}20` }}
           >
             <Icon
-              className="h-4.5 w-4.5"
+              className="h-4 w-4 sm:h-4.5 sm:w-4.5"
               style={{ color: accentColor }}
               aria-hidden="true"
             />
@@ -130,11 +130,11 @@ function DashboardPanel({ step }: { step: Step }) {
         </div>
 
         {/* Metric cards */}
-        <div className="mb-5 grid grid-cols-3 gap-3">
+        <div className="mb-4 sm:mb-5 grid grid-cols-3 gap-2.5 sm:gap-3">
           {metrics.map(m => (
-            <div key={m.label} className="rounded-lg border border-border p-3">
+            <div key={m.label} className="rounded-lg border border-border p-2.5 sm:p-3">
               <p className="text-[10px] text-muted-foreground">{m.label}</p>
-              <p className="mt-1 text-xl font-bold text-foreground" style={{ color: accentColor }}>
+              <p className="mt-0.5 sm:mt-1 text-lg sm:text-xl font-bold text-foreground" style={{ color: accentColor }}>
                 {m.value}
               </p>
             </div>
@@ -142,7 +142,7 @@ function DashboardPanel({ step }: { step: Step }) {
         </div>
 
         {/* Mini bar chart */}
-        <div className="rounded-lg border border-border p-4">
+        <div className="rounded-lg border border-border p-3 sm:p-4">
           <div className="mb-2 flex items-center justify-between">
             <p className="text-[10px] font-medium text-muted-foreground">Weekly performance</p>
             <div className="flex items-center gap-1 text-[10px] font-semibold text-brand-success">
@@ -151,7 +151,7 @@ function DashboardPanel({ step }: { step: Step }) {
             </div>
           </div>
           <div
-            className="flex h-[64px] items-end gap-1"
+            className="flex h-[52px] sm:h-[64px] items-end gap-1"
             role="img"
             aria-label="Weekly performance chart"
           >
@@ -176,11 +176,11 @@ function DashboardPanel({ step }: { step: Step }) {
         </div>
 
         {/* Quick actions */}
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-3 sm:mt-4 flex flex-wrap gap-2">
           {['View report', 'Share', 'Export'].map(a => (
             <div
               key={a}
-              className="rounded-md border border-border px-3 py-1.5 text-[11px] font-medium text-muted-foreground"
+              className="rounded-md border border-border px-2.5 py-1 text-[10px] sm:px-3 sm:py-1.5 sm:text-[11px] font-medium text-muted-foreground"
             >
               {a}
             </div>
@@ -227,12 +227,12 @@ export function ProductTourScroll() {
       style={{ minHeight: `${STEPS.length * 100}vh` }}
       aria-label="Scroll to explore product features"
     >
-      {/* Sticky inner — fills one viewport height */}
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <div className="mx-auto flex w-full max-w-[1280px] items-center gap-12 px-6 xl:px-8">
+      {/* Sticky inner — padded at top to clear sticky navbar and prevent items clipping */}
+      <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden pt-20 pb-6 sm:pt-24 lg:pt-24 lg:pb-8">
+        <div className="mx-auto flex w-full max-w-[1280px] items-center gap-8 lg:gap-12 px-4 sm:px-6 lg:px-8">
 
           {/* LEFT — step list */}
-          <div className="hidden w-[380px] shrink-0 flex-col gap-2 lg:flex">
+          <div className="hidden w-[340px] xl:w-[380px] shrink-0 flex-col gap-2 lg:flex">
             {STEPS.map((step, i) => {
               const isActive = i === activeStep
               return (
@@ -245,17 +245,17 @@ export function ProductTourScroll() {
                     window.scrollTo({ top: target, behavior: 'smooth' })
                   }}
                   className={cn(
-                    'group relative flex items-center gap-4 rounded-xl px-4 py-3.5',
+                    'group relative flex items-center gap-3.5 rounded-xl px-3.5 py-2.5 sm:py-3',
                     'text-left transition-all duration-300',
                     isActive
-                      ? 'bg-foreground text-background'
+                      ? 'bg-foreground text-background shadow-sm'
                       : 'hover:bg-brand-surface text-muted-foreground hover:text-foreground',
                   )}
                 >
                   {/* Accent bar */}
                   <div
                     className={cn(
-                      'absolute left-0 top-1/2 h-8 w-[3px] -translate-y-1/2 rounded-r-full transition-opacity duration-300',
+                      'absolute left-0 top-1/2 h-7 w-[3px] -translate-y-1/2 rounded-r-full transition-opacity duration-300',
                       isActive ? 'opacity-100' : 'opacity-0',
                     )}
                     style={{ backgroundColor: step.accentColor }}
@@ -264,25 +264,25 @@ export function ProductTourScroll() {
 
                   <div
                     className={cn(
-                      'flex h-8 w-8 shrink-0 items-center justify-center rounded-lg',
+                      'flex h-7 w-7 sm:h-8 sm:w-8 shrink-0 items-center justify-center rounded-lg',
                       isActive ? 'bg-background/10' : 'bg-brand-surface group-hover:bg-background',
                     )}
                   >
-                    <step.Icon className="h-4 w-4" aria-hidden="true" />
+                    <step.Icon className="h-3.5 w-3.5 sm:h-4 sm:w-4" aria-hidden="true" />
                   </div>
 
                   <div className="min-w-0">
                     <p className={cn(
-                      'text-xs font-medium uppercase tracking-widest',
+                      'text-[11px] font-medium uppercase tracking-widest',
                       isActive ? 'text-background/60' : 'text-muted-foreground',
                     )}>
                       {`0${i + 1}`}
                     </p>
-                    <p className="truncate text-sm font-semibold">{step.title.split(' ').slice(0, 4).join(' ')}</p>
+                    <p className="truncate text-xs sm:text-sm font-semibold">{step.title.split(' ').slice(0, 4).join(' ')}</p>
                   </div>
 
                   {isActive && (
-                    <ArrowRight className="ml-auto h-4 w-4 shrink-0" aria-hidden="true" />
+                    <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0" aria-hidden="true" />
                   )}
                 </button>
               )
@@ -291,14 +291,14 @@ export function ProductTourScroll() {
 
           {/* RIGHT — dashboard panel */}
           <div className="relative min-w-0 flex-1">
-            {/* Description (above panel, animates per step) */}
-            <div className="mb-6 lg:hidden">
+            {/* Description (above panel, animates per step on mobile/tablet) */}
+            <div className="mb-4 lg:hidden">
               <AnimatePresence mode="wait">
                 <motion.div key={activeStep} {...PANEL_TRANSITION}>
-                  <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  <p className="text-[11px] font-medium uppercase tracking-widest text-muted-foreground">
                     {STEPS[activeStep].label}
                   </p>
-                  <h3 className="mt-1 text-2xl font-bold text-foreground">
+                  <h3 className="mt-0.5 text-xl font-bold text-foreground sm:text-2xl">
                     {STEPS[activeStep].title}
                   </h3>
                 </motion.div>
@@ -306,24 +306,24 @@ export function ProductTourScroll() {
             </div>
 
             {/* Description (side-by-side on lg+) */}
-            <div className="mb-6 hidden lg:block">
+            <div className="mb-4 hidden lg:block">
               <AnimatePresence mode="wait">
                 <motion.div key={`desc-${activeStep}`} {...PANEL_TRANSITION}>
-                  <p className="mb-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                  <p className="mb-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">
                     {STEPS[activeStep].label}
                   </p>
-                  <p className="max-w-[400px] text-base text-muted-foreground">
+                  <p className="max-w-[480px] text-sm text-muted-foreground">
                     {STEPS[activeStep].description}
                   </p>
                   {/* Feature bullets */}
-                  <ul className="mt-4 space-y-2">
+                  <ul className="mt-2.5 space-y-1.5">
                     {[
                       'No setup fees or contracts',
                       'Free migration from existing tools',
                       '24/7 support included',
                     ].map(item => (
-                      <li key={item} className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <CheckCircle className="h-4 w-4 shrink-0 text-brand-accent" aria-hidden="true" />
+                      <li key={item} className="flex items-center gap-2 text-xs sm:text-sm text-muted-foreground">
+                        <CheckCircle className="h-3.5 w-3.5 shrink-0 text-brand-accent" aria-hidden="true" />
                         {item}
                       </li>
                     ))}
@@ -340,7 +340,7 @@ export function ProductTourScroll() {
             </AnimatePresence>
 
             {/* Step progress dots (mobile) */}
-            <div className="mt-6 flex justify-center gap-2 lg:hidden" aria-hidden="true">
+            <div className="mt-4 flex justify-center gap-2 lg:hidden" aria-hidden="true">
               {STEPS.map((_, i) => (
                 <button
                   key={i}

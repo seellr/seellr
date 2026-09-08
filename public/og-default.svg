@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <!-- OG Default Image — 1200x630 -->
+  <rect width="1200" height="630" fill="#071a3d"/>
+  <!-- Diagonal X pattern background -->
+  <g opacity="0.06">
+    <line x1="0" y1="0" x2="630" y2="630" stroke="#145bff" stroke-width="80"/>
+    <line x1="630" y1="0" x2="1200" y2="630" stroke="#145bff" stroke-width="80"/>
+    <line x1="570" y1="0" x2="1200" y2="630" stroke="#c8ff2c" stroke-width="40"/>
+    <line x1="0" y1="0" x2="630" y2="630" stroke="#c8ff2c" stroke-width="40"/>
+  </g>
+  <!-- X mark logo -->
+  <g transform="translate(90, 245)">
+    <line x1="0" y1="0" x2="140" y2="140" stroke="#145bff" stroke-width="16" stroke-linecap="round"/>
+    <line x1="140" y1="0" x2="0" y2="140" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="70" cy="70" r="10" fill="#c8ff2c"/>
+  </g>
+  <!-- Wordmark -->
+  <text x="260" y="330" font-family="'Satoshi', system-ui, sans-serif" font-size="80" font-weight="700" fill="#ffffff" letter-spacing="-0.03em">Seellr</text>
+  <!-- Tagline -->
+  <text x="260" y="390" font-family="system-ui, sans-serif" font-size="28" fill="#c8ff2c" font-weight="500" letter-spacing="0.02em">Build. Sell. Grow.</text>
+</svg>
